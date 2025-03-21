@@ -86,17 +86,17 @@
             <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/aa/Music_Disc_13_JE1_BE1.png/revision/latest?cb=20240724193425"
             alt="Clique para tocar o audio"
             height="50px" width="50px"
-            style="cursor: crosshair;"
+            style="cursor:crosshair;"
             onclick="tocarAudio()">
 
-            <audio id="meuAudio">
+            <audio id="meuAudio" > <!--atribui o ID "meuAudio" para a musica-->
                 <source src="Iframe Aria Math [KOIEo_74L-Q].mp3" type="audio/mpeg">
                 Seu navegador não suporta áudio.
             </audio>
 
             <script>
                 function tocarAudio() {
-                    var audio = document.getElementById("meuAudio");
+                    var audio = document.getElementById("meuAudio");//variavel audio recebe o primeiro elemento com o ID "meuAudio" encontrado(O de cima)
                     if(audio.paused){
                         audio.play();
                     }else audio.pause()    
@@ -106,7 +106,8 @@
         </section>
 
         <footer>
-            <p class="rgb-text">by: Aryel Curi</p>
+            <a href="https://github.com/AryelCuriD" class="rgb-text" target="_blank">By: Aryel Curi</a>
+
         </footer>
     </body>
 
