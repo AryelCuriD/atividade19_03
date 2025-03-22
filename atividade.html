@@ -2,6 +2,7 @@
 <html>  
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" type="image/svg" href="games-minecraft.svg">
         <title>MINECRAFT</title>
         <style>
             @keyframes rgb { /*rgb*/
@@ -82,26 +83,61 @@
 
             <h3>Música:</h3>
             <p>A música de Minecraft, um jogo eletrônico inicialmente publicado pela Mojang em março de 2009, foi composta pelo músico alemão Daniel Rosenfeld, mais conhecido pelo nome artístico C418. A trilha sonora consiste em temas instrumentais de música ambiente e foi dividida em dois álbuns: Minecraft - Volume Alpha (2011) e Minecraft - Volume Beta (2013). A Kotaku classificou o primeiro álbum como uma das melhores trilhas sonoras de videogames de 2011. Ambos os álbuns incluem músicas em destaque no jogo, além de outras inclusas em trailers e instrumentais não inclusos no lançamento final do jogo.</p>
-            <h4> Clique abaixo para ouvir uma de suas músicas:</h4>
-            <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/aa/Music_Disc_13_JE1_BE1.png/revision/latest?cb=20240724193425"
-            alt="Clique para tocar o audio"
+            <h4> Clique abaixo para ouvir uma música aleatória dele:</h4>
+            <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/aa/Music_Disc_13_JE1_BE1.png"
+            alt="Clique para tocar o áudio"
             height="50px" width="50px"
-            style="cursor:crosshair;"
+            style="cursor: crosshair;"
             onclick="tocarAudio()">
 
-            <audio id="meuAudio" > <!--atribui o ID "meuAudio" para a musica-->
-                <source src="Iframe Aria Math [KOIEo_74L-Q].mp3" type="audio/mpeg">
-                Seu navegador não suporta áudio.
-            </audio>
+            <audio id="meuAudio"></audio>
 
             <script>
                 function tocarAudio() {
-                    var audio = document.getElementById("meuAudio");//variavel audio recebe o primeiro elemento com o ID "meuAudio" encontrado(O de cima)
-                    if(audio.paused){
-                        audio.play();
-                    }else audio.pause()    
+                // Lista de músicas
+                var musicas = [
+                    "musica/Aria Math - C418.mp3",
+                    "musica/Beggining - C418.mp3",
+                    "musica/Clark - C418.mp3",
+                    "musica/Haggstrom - C418.mp3",
+                    "musica/Living Mice - C418.mp3",
+                    "musica/Mice on Venus - C418.mp3",
+                    "musica/Moog City - C418.mp3",
+                    "musica/Subwoofer Lullaby - C418.mp3",
+                    "musica/Sweden - C418.mp3",
+                    "musica/Wet Hands - C418.mp3",
+                ];
+
+                    var audio = document.getElementById("meuAudio");//controlar o <audio> pela variavel audio
+
+                
+
+                    // Se estiver tocando pausa
+                    if (!audio.paused) {
+                    audio.pause();
+                    return; //return para o codigo nao continuar
+                    }
+
+                    // Escolhe uma música aleatória e toca
+                    audio.src = musicas[Math.floor(Math.random() * musicas.length)];//numero entre 0 e 9(musicas)
+                    audio.play();
                 }
+    
             </script>
+
+            <h3>Versões do Jogo:</h3>
+            <ul>
+                <li>Computador: Minecraft: Java Edition - Minecraft: Windows 10 Edition -  Minecraft Classic - Minecraft 4K - Minecraft: Education Edition</li>
+                <br>
+
+                <li>Celulares: Minecraft: Pocket Edition(Bedrock)</li>
+                <br>
+
+                <li>Consoles: Minecraft: Bedrock Edition - Minecraft: New Nintendo 3DS Edition - Minecraft: Wii U Edition - Minecraft VR</li>
+                <br>
+
+                <li>Minecraft China: Uma edição destinada ao território chinês, onde foi lançado sob um contrato de licença entre a NetEase e a Mojang. A edição para PC é baseada no Java Edition original, enquanto a versão mobile é baseada em Bedrock Edition. A edição é gratuita e até novembro de 2019 contava com mais de 300 milhões de jogadores.</li>
+            </ul>
 
         </section>
 
