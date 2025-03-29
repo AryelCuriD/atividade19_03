@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>MINECRAFT</title>
+        <link rel="icon" href="images/noteblock.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="cabecalho-principal">
+                Música e Influência
+            </h1>
+        </header>
+
+        <section class="contornoRGB">
+            <h3>Música:</h3>
+            <p>A música de Minecraft, foi composta pelo músico alemão Daniel Rosenfeld, mais conhecido pelo nome artístico C418. A trilha sonora consiste em temas instrumentais de música ambiente e foi dividida em dois álbuns: Minecraft - Volume Alpha (2011) e Minecraft - Volume Beta (2013). A Kotaku classificou o primeiro álbum como uma das melhores trilhas sonoras de videogames de 2011. Ambos os álbuns incluem músicas em destaque no jogo, além de outras inclusas em trailers e instrumentais não inclusos no lançamento final do jogo.</p>
+            
+            <div class="alinharMusica">
+                <span><br><br><b>Clique ao lado para ouvir uma música aleatória dele:</b></span>
+                <img id="imagem" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/18/Note_Block_JE2_BE2.png/revision/latest/scale-to-width-down/268?cb=20220311024036"
+                    alt="Clique para tocar o áudio" onclick="tocarAudioEGif()">
+            </div>
+            <audio id="meuAudio"></audio>
+            
+            <script>
+                function tocarAudioEGif() {
+                    // Lista de músicas
+                    var musicas = [
+                        "musica/Aria Math - C418.mp3",
+                        "musica/Beggining - C418.mp3",
+                        "musica/Clark - C418.mp3",
+                        "musica/Haggstrom - C418.mp3",
+                        "musica/Living Mice - C418.mp3",
+                        "musica/Mice on Venus - C418.mp3",
+                        "musica/Moog City - C418.mp3",
+                        "musica/Subwoofer Lullaby - C418.mp3",
+                        "musica/Sweden - C418.mp3",
+                        "musica/Wet Hands - C418.mp3",
+                    ];
+                
+                    var imagem = document.getElementById("imagem"); // Controlar a imagem
+                    var audio = document.getElementById("meuAudio"); // Controlar o <audio>
+                
+                    // Se estiver tocando, pausa e volta a imagem padrão
+                    if (!audio.paused && imagem.src == "https://static.wikia.nocookie.net/minecraft/images/6/63/Note_Block_animate.gif/revision/latest/scale-to-width/360?cb=20201121162502") {
+                        audio.pause();
+                        imagem.src = "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/18/Note_Block_JE2_BE2.png/revision/latest/scale-to-width-down/268?cb=20220311024036";
+                        imagem.style.height = "100px";
+                        return;
+                    }
+                
+                    // Escolhe uma música aleatória
+                    audio.src = musicas[Math.floor(Math.random() * musicas.length)]; // Música aleatória
+                    audio.play();
+                
+                    // Altera a imagem pra GIF com transição suave
+                    imagem.src = "https://static.wikia.nocookie.net/minecraft/images/6/63/Note_Block_animate.gif/revision/latest/scale-to-width/360?cb=20201121162502";
+                    imagem.style.height = "150px";
+                }
+            </script>
+        </section>
+
+        <section class="contornoRGB">
+            <h3>Influência:</h3>
+            <p>Além da própria trilha sonora do jogo ter se tornado influência para milhares de outras trilhas sonoras, o Minecraft no Brasil e no Mundo ganhou sua fama principalmente por causa de youtubers do jogo. Exemplos dos maiores youtubers de minecraft do Brasil:</p>
+
+            <ul>
+                <li><a href="https://www.youtube.com/@VenomExtreme" target="_blank"><i>VenomExtreme</i></a></li>
+                <li><a href="https://www.youtube.com/@coisadenerd" target="_blank"><i>Leon(CoisaDeNerd)</i></a></li></li>
+                <li><a href="https://www.youtube.com/@BRKsEDU" target="_blank"><i>BrksEdu</i></a></li></li>
+                <li><a href="https://www.youtube.com/@TazerCraft" target="_blank"><i>TazerCraft</i></a></li></li>
+                <li><a href="https://www.youtube.com/@CafeinadoGamer" target="_blank"><i>Cafeinado</i></a></li></li>
+                <li><a href="https://www.youtube.com/@Febatista" target="_blank"><i>Febatista</i></a></li></li>
+                <li><a href="https://www.youtube.com/@ojabuti123" target="_blank"><i>Jabuti</i></a></li></li>
+                <li><a href="https://www.youtube.com/@Nofaxu" target="_blank"><i>Nofaxu</i></a></li></li>
+                <li><a href="https://www.youtube.com/@spok" target="_blank"><i>Spok</i></a></li></li>
+                <li><a href="https://www.youtube.com/@AuthenticGames" target="_blank"><i>AuthenticGames</i></a></li></li>
+                <li><a href="https://www.youtube.com/@jvnq" target="_blank"><i>Jvnq</i></a></li></li>
+                <li><a href="https://www.youtube.com/@MoonKase" target="_blank"><i>Moonkase</i></a></li></li>
+                <li><a href="https://www.youtube.com/@BaixaMemoria" target="_blank"><i>BaixaMemoria</i></a></li></li>
+                <li><a href="https://www.youtube.com/@viniccius13" target="_blank"><i>Vinicius13</i></a></li></li>
+                <li><a href="https://www.youtube.com/@HDDaviGamer" target="_blank"><i>Davi</i></a></li></li>
+                <li><a href="https://www.youtube.com/@rezendeevil" target="_blank"><i>Rezendeevil</i></a></li></li>
+                <li><a href="https://www.youtube.com/@EduKofBreak" target="_blank"><i>Edukof</i></a></li></li>
+                <li><a href="https://www.youtube.com/@stux777" target="_blank"><i>Stux</i></a></li></li>
+                <li><a href="https://www.youtube.com/@Godenot" target="_blank"><i>Godenot</i></a></li></li>
+                <li><a href="https://www.youtube.com/@Jazzghost" target="_blank"><i>JazzGhost</i></a></li></li>
+            </ul>
+        </section>
+
+    </body>
+
+    <footer>
+        <a id="eu" href="https://github.com/AryelCuriD" class="rgb-text" target="_blank">By: Aryel Curi</a>
+    </footer>
+</html>
