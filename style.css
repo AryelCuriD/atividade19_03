@@ -141,8 +141,9 @@ ul {
     background-color: rgb(117, 117, 117);
     position: relative;
     bottom: 300px;
-    left: 500px;
+    left: 42%;
     font-family: "Minecraftia", sans-serif;
+    margin-bottom: 30px;
 }
 
 .botaoMine:hover {
@@ -153,19 +154,22 @@ ul {
 
 
 /*opçoes*/
-#novosBotoes {
-    display: none;
+#novosBotoes button {
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
+/* Posicione os botões com base na imagem (ajuste conforme necessário) */
 #opcao1 {
     background-color: transparent;
     border-color: gray;
     height: 73px;
     width: 750px;
-    position: relative;
-    bottom: 499px;
-    left: 376px;
+    top: 24.6%; left: 34.9%;
 }
+
 #opcao1:hover {
     border-color: white;
     background-color: rgba(255, 255, 255, 0.1);
@@ -176,10 +180,9 @@ ul {
     border-color: gray;
     height: 73px;
     width: 750px;
-    position: relative;
-    bottom: 493px;
-    left: 376px;
+    top: 33.01%; left: 34.9%; 
 }
+
 #opcao2:hover {
     border-color: white;
     background-color: rgba(255, 255, 255, 0.1);
@@ -190,10 +193,9 @@ ul {
     border-color: gray;
     height: 73px;
     width: 750px;
-    position: relative;
-    bottom: 488px;
-    left: 376px;
+    top: 41.3%; left: 34.9%;
 }
+
 #opcao3:hover {
     border-color: white;
     background-color: rgba(255, 255, 255, 0.1);
@@ -204,25 +206,30 @@ ul {
     border-color: gray;
     height: 73px;
     width: 750px;
-    position: relative;
-    bottom: 484px;
-    left: 376px;
+    top: 49.5%; left: 34.9%;
 }
+
 #opcao4:hover {
     border-color: white;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-#voltar {
+#voltar  {
     background-color: transparent;
     border-color: gray;
     height: 42px;
     width: 156px;
-    position: relative;
-    bottom: 308px;
-    left: 9px;
+    top: 71.5%; left: 55.3%; 
 }
 #voltar:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+#principal {
+    left: 20px;
+    height: 25px;
+    width: 55px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    border-radius: 10px;
+}

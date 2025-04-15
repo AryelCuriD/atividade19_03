@@ -13,12 +13,12 @@
                 Minecraft Menu:
             </h1>
             
-           <img class="imagemMenu" id="imagemMenu"src="https://preview.redd.it/qigbmfa8hmb51.jpg?width=1080&crop=smart&auto=webp&s=0220c84b85bcf55ca3b0188cf637924129af8975">
+           <img class="imagemMenu" id="imagemMenu" src="https://preview.redd.it/qigbmfa8hmb51.jpg?width=1080&crop=smart&auto=webp&s=0220c84b85bcf55ca3b0188cf637924129af8975">
 
            
             <a>
-                
                 <button class="botaoMine" id="botaoComecar" onclick="mudarMenu()">Começar</button>
+                <button class="botaoMine" id="botaoSair" onclick="sair()">Sair</button>
             </a>
 
             <div id="novosBotoes">
@@ -28,27 +28,14 @@
                 <button id="opcao4" onclick="window.location.href='comandosLinks.html'"></button>
                 <button class="contornoRGB" id="voltar" onclick="voltar()"></button>
             </div>
-
-            <script>
-                function mudarMenu(){
-                    document.getElementById("imagemMenu").src = "images/menuMundo.jpg"
-                    document.getElementById("botaoComecar").style.display = "none";
-                    document.getElementById("novosBotoes").style.display = "block";
-                }
-
-                function voltar(){
-                    document.getElementById("imagemMenu").src = "https://preview.redd.it/qigbmfa8hmb51.jpg?width=1080&crop=smart&auto=webp&s=0220c84b85bcf55ca3b0188cf637924129af8975"
-                    document.getElementById("botaoComecar").style.display = "block";
-                    document.getElementById("novosBotoes").style.display = "none";
-                }
-            </script>
         </header>
     </body>
+
 
     <footer>
         <a id="eu" href="https://github.com/AryelCuriD" class="rgb-text" target="_blank">By: Aryel Curi</a>
     </footer>
 
 
-
+    <script src="script.js"></script>
 </html>
